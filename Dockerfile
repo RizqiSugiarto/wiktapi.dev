@@ -46,7 +46,7 @@ WORKDIR /app/packages/api
 VOLUME ["/app/packages/api/data"]
 
 # ---- runtime ----
-FROM node:22-slim
+FROM node:22-slim AS runtime
 
 WORKDIR /app
 
