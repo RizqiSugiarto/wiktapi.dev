@@ -2,8 +2,8 @@ pre-commit:
   parallel: true
   commands:
     fmt:
-      run: vp fmt --no-error-on-unmatched-pattern {staged_files}
+      run: pnpm exec vp fmt --no-error-on-unmatched-pattern {staged_files}
       stage_fixed: true
     lint:
       glob: "*.{js,jsx,ts,tsx,mjs,cjs}"
-      run: vp lint --type-aware --type-check {staged_files}
+      run: pnpm exec vp lint --type-aware --type-check {staged_files}
