@@ -39,6 +39,7 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: "Self-Hosting", link: "/guides/self-hosting" },
+          { text: "Kubernetes", link: "/guides/kubernetes" },
           { text: "Updating Data", link: "/guides/updating-data" },
         ],
       },

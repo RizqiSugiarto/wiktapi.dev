@@ -131,3 +131,7 @@ docker run -p 3000:3000 -v /path/to/data:/data wiktapi
 The container expects the database at `/data/wiktionary.db` by default. Override with `-e DATA_PATH=...` if your file is named or located differently.
 
 To populate the database before the first run, use the data pipeline commands from the [Data pipeline](#data-pipeline) section, then point the volume at the directory containing the resulting `wiktionary.db`.
+
+### Kubernetes
+
+See the [Kubernetes deployment guide](https://wiktapi.dev/guides/kubernetes.html) for running the API and the data pipeline on Kubernetes with shared persistent storage.
